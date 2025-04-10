@@ -9,6 +9,7 @@ Este projeto é atualizado frequentemente com novos desafios, soluções e anota
 
 - `exercises.py`: Arquivo principal com os exercícios resolvidos.
 - `notes.md`: Anotações, observações e aprendizados adquiridos durante os estudos.
+- `.gitignore`: Evita que arquivos desnecessários subam pro repositório.
 
 ---
 
