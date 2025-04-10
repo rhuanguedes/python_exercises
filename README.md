@@ -9,7 +9,6 @@ Este projeto é atualizado frequentemente com novos desafios, soluções e anota
 
 - `exercises.py`: Arquivo principal com os exercícios resolvidos.
 - `notes.md`: Anotações, observações e aprendizados adquiridos durante os estudos.
-- `.gitattributes`: Arquivo de configuração para padronização de codificação em ambientes GitHub.
 
 ---
 
@@ -22,7 +21,7 @@ Praticar lógica de programação e consolidar o aprendizado da linguagem Python
 ## Progresso
 
 Atualmente seguindo a trilha de aprendizado do [Curso em Vídeo - Python (Gustavo Guanabara)](https://www.cursoemvideo.com/curso/python-3-mundo-1/)  
-Exercícios resolvidos até: Exercício 065
+Exercícios resolvidos até: Exercício 041
 
 ---
 
@@ -43,4 +42,3 @@ Exercícios resolvidos até: Exercício 065
 ## Contato
 
 Email: rp724500@gmail.com 
-GitHub: [github.com/rhuanguedes](https://github.com/rhuanguedes)
