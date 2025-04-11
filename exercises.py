@@ -33,7 +33,7 @@
 '''Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor.'''
 
 # num = int(input("Digite um número: "))
-# print(f"O antecessor deste número é {num - 1} e o sucessor é {num + 1}.")
+# print(f"O antecessor deste número é {num - num} e o sucessor é {num + num}.")
 
 # === EXERCÍCIO 006 ===
 '''Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.'''
@@ -58,10 +58,10 @@
 '''Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada.'''
 
 # num = int(input("Digite um valor: "))
-# print(f"1 x {num} = {num}\n2 x {num} = {num * 2}\n3 x {num} = {num * 3}\n4 x {num} = {num * 4}\n5 x {num} = {num * 5}\n6 x {num} = {num * 6}\n7 x {num} = {num * 7}\n8 x {num} = {num * 8}\n9 x {num} = {num * 9}")
+# print(f"num x {num} = {num}\n2 x {num} = {num * 2}\n3 x {num} = {num * 3}\n4 x {num} = {num * 4}\n5 x {num} = {num * 5}\n6 x {num} = {num * 6}\n7 x {num} = {num * 7}\n8 x {num} = {num * 8}\n9 x {num} = {num * 9}")
 
 # === EXERCÍCIO 010 ===
-'''Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,27.'''
+'''Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar. Considere US$num,00 = R$3,27.'''
 
 # num = float(input("Digite um valor: "))
 # print(f"Com este valor você pode comprar {num / 3.27:.2f} doláres.")
@@ -89,7 +89,7 @@
 '''Escreva um programa que converta uma temperatura digitada em ºC e converta para ºF.'''
 
 # temp = int(input("Digite a temperatura em C°: "))
-# print(f"Essa temperatura equivale a {temp * 1.8 + 32}F°")
+# print(f"Essa temperatura equivale a {temp * num.8 + 32}F°")
 
 # === EXERCÍCIO 015 ===
 '''Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar,
@@ -184,17 +184,19 @@
 # === EXERCÍCIO 023 ===
 '''Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos dígitos separados.'''
 
-#! Exercício incompleto
-# num = (input("Digite um número: "))
-# print(num)
+# num = int((input("Digite um número: ")))
+# un = num // 1 % 10
+# dz = num // 10 % 10
+# cn = num // 100 % 10
+# ml = num // 1000 % 10
+
+# print(f"Unidade: {un}\nDezena: {dz}\nCentena: {cn}\nMilhar: {ml}")
 
 # === EXERCÍCIO 024 ===
 '''Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome “SANTO”.'''
 
-#! Exercício pendente
-
 # cidade = input("Digite um nome de cidade: ").upper()
-# print(("SANTO" in cidade))
+# print((cidade[:5] == "SANTO"))
 
 # === EXERCÍCIO 025 ===
 '''Crie um programa que leia o nome de uma pessoa e diga se ela tem “SILVA” no nome.'''
@@ -332,7 +334,7 @@
 
 # === EXERCÍCIO 037 ===
 '''Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual será a base de conversão:
-[1] para binário,
+[num] para binário,
 [2] para octal,
 [3] para hexadecimal.'''
 
@@ -340,10 +342,10 @@
 # print("=" * 30)
 # num = int(input("Digite um número: "))
 # print("=" * 30)
-# print("[1] Binário\n[2] Octal\n[3] Hexadecimal\n")
+# print("[num] Binário\n[2] Octal\n[3] Hexadecimal\n")
 # opcao = int(input("Selecione uma opção: "))
 
-# if opcao == 1:
+# if opcao == num:
 #     num = bin(num)
 #     print(f"Binário: {num}")
 # elif opcao == 2:
@@ -449,17 +451,17 @@ data_atual = datetime.datetime.now().date()
 #! Exercício pendente
 
 # === EXERCÍCIO 046 === #? ESTRUTURA FOR
-'''Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0, com uma pausa de 1 segundo entre eles.'''
+'''Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0, com uma pausa de num segundo entre eles.'''
 
 #! Exercício pendente
 
 # === EXERCÍCIO 047 ===
-'''Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50.'''
+'''Crie um programa que mostre na tela todos os números pares que estão no intervalo entre num e 50.'''
 
 #! Exercício pendente
 
 # === EXERCÍCIO 048 ===
-'''Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontram no intervalo de 1 até 500.'''
+'''Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontram no intervalo de num até 500.'''
 
 #! Exercício pendente
 
@@ -516,13 +518,13 @@ data_atual = datetime.datetime.now().date()
 #! Exercício pendente
 
 # === EXERCÍCIO 059 ===
-'''Crie um programa que leia dois valores e mostre um menu na tela: [1] somar, [2] multiplicar, [3] maior, [4] novos números, [5] sair do programa.
+'''Crie um programa que leia dois valores e mostre um menu na tela: [num] somar, [2] multiplicar, [3] maior, [4] novos números, [5] sair do programa.
  Seu programa deverá realizar a operação solicitada em cada caso.'''
 
 #! Exercício pendente
 
 # === EXERCÍCIO 060 ===
-'''Faça um programa que leia um número qualquer e mostre o seu fatorial. Ex.: 5! = 5 x 4 x 3 x 2 x 1 = 120''' 
+'''Faça um programa que leia um número qualquer e mostre o seu fatorial. Ex.: 5! = 5 x 4 x 3 x 2 x num = 120''' 
 
 #! Exercício pendente
 
@@ -539,7 +541,7 @@ data_atual = datetime.datetime.now().date()
 
 # === EXERCÍCIO 063 ===
 '''Escreva um programa que leia um número N inteiro qualquer e mostre na tela os N primeiros elementos de uma Sequência de Fibonacci.
- Ex.: 0 --> 1 --> 1 --> 2 --> 3 --> 5 --> 8'''
+ Ex.: 0 --> num --> num --> 2 --> 3 --> 5 --> 8'''
 
 #! Exercício pendente
 
