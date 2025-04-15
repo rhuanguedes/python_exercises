@@ -33,7 +33,7 @@
 '''Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor.'''
 
 # num = int(input("Digite um número: "))
-# print(f"O antecessor deste número é {num - num} e o sucessor é {num + num}.")
+# print(f"O antecessor deste número é {num - 1} e o sucessor é {num + 1}.")
 
 # === EXERCÍCIO 006 ===
 '''Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.'''
@@ -58,10 +58,10 @@
 '''Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada.'''
 
 # num = int(input("Digite um valor: "))
-# print(f"num x {num} = {num}\n2 x {num} = {num * 2}\n3 x {num} = {num * 3}\n4 x {num} = {num * 4}\n5 x {num} = {num * 5}\n6 x {num} = {num * 6}\n7 x {num} = {num * 7}\n8 x {num} = {num * 8}\n9 x {num} = {num * 9}")
+# print(f"1 x {num} = {num}\n2 x {num} = {num * 2}\n3 x {num} = {num * 3}\n4 x {num} = {num * 4}\n5 x {num} = {num * 5}\n6 x {num} = {num * 6}\n7 x {num} = {num * 7}\n8 x {num} = {num * 8}\n9 x {num} = {num * 9}")
 
 # === EXERCÍCIO 010 ===
-'''Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar. Considere US$num,00 = R$3,27.'''
+'''Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,27.'''
 
 # num = float(input("Digite um valor: "))
 # print(f"Com este valor você pode comprar {num / 3.27:.2f} doláres.")
@@ -89,7 +89,7 @@
 '''Escreva um programa que converta uma temperatura digitada em ºC e converta para ºF.'''
 
 # temp = int(input("Digite a temperatura em C°: "))
-# print(f"Essa temperatura equivale a {temp * num.8 + 32}F°")
+# print(f"Essa temperatura equivale a {temp * 1.8 + 32}F°")
 
 # === EXERCÍCIO 015 ===
 '''Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar,
@@ -347,7 +347,7 @@
 
 # === EXERCÍCIO 037 ===
 '''Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual será a base de conversão:
-[num] para binário,
+[1] para binário,
 [2] para octal,
 [3] para hexadecimal.'''
 
@@ -555,29 +555,47 @@ Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.''
 #     print('Digite apenas "Pedra", "Papel" ou "Tesoura"')
 
 # === EXERCÍCIO 046 === #? ESTRUTURA FOR
-'''Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0, com uma pausa de num segundo entre eles.'''
+'''Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0, com uma pausa de um segundo entre eles.'''
 
-#! Exercício pendente
+# from time import sleep
+
+# for i in range(10, -1, -1):
+#     print(i)
+#     sleep(1)
+# print("Boom!!!")
 
 # === EXERCÍCIO 047 ===
-'''Crie um programa que mostre na tela todos os números pares que estão no intervalo entre num e 50.'''
+'''Crie um programa que mostre na tela todos os números pares que estão no intervalo entre 1 e 50.'''
 
-#! Exercício pendente
+# for i in range(1, 51):
+#     if i % 2 == 0:
+#         print(i,end= " ")
 
 # === EXERCÍCIO 048 ===
-'''Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontram no intervalo de num até 500.'''
+'''Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três e que se encontram no intervalo de 1 até 500.'''
 
-#! Exercício pendente
+# soma = 0
+# for i in range(1, 501):
+#     if i % 2 != 0 and i % 3 == 0:
+#         soma += i
+# print(f"A soma dos números ímpares que são múltiplos de três é {soma}.")
 
 # === EXERCÍCIO 049 ===
 '''Refaça o EXERCÍCIO 009, mostrando a tabuada de um número que o usuário escolher, só que agora utilizando um laço for.'''
 
-#! Exercício pendente
+# num = int(input("Digite um número: "))
+# for i in range(1, 10):
+#     print(f"{i} x {num} = {num * i}")
 
 # === EXERCÍCIO 050 ===
 '''Desenvolva um programa que leia seis números inteiros e mostre a soma apenas daqueles que forem pares. Se o valor digitado for ímpar, desconsidere-o.'''
 
-#! Exercício pendente
+# soma = 0
+# for i in range(1, 7):
+#     nums = int(input(f"Digite o {i}º número: "))
+#     if nums % 2 == 0:
+#         soma += nums
+# print(f"A soma dos números pares digitados é {soma}.")
 
 # === EXERCÍCIO 051 ===
 '''Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa progressão.'''
@@ -622,13 +640,13 @@ Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.''
 #! Exercício pendente
 
 # === EXERCÍCIO 059 ===
-'''Crie um programa que leia dois valores e mostre um menu na tela: [num] somar, [2] multiplicar, [3] maior, [4] novos números, [5] sair do programa.
+'''Crie um programa que leia dois valores e mostre um menu na tela: [1] somar, [2] multiplicar, [3] maior, [4] novos números, [5] sair do programa.
  Seu programa deverá realizar a operação solicitada em cada caso.'''
 
 #! Exercício pendente
 
 # === EXERCÍCIO 060 ===
-'''Faça um programa que leia um número qualquer e mostre o seu fatorial. Ex.: 5! = 5 x 4 x 3 x 2 x num = 120''' 
+'''Faça um programa que leia um número qualquer e mostre o seu fatorial. Ex.: 5! = 5 x 4 x 3 x 2 x 1 = 120''' 
 
 #! Exercício pendente
 
@@ -645,7 +663,7 @@ Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.''
 
 # === EXERCÍCIO 063 ===
 '''Escreva um programa que leia um número N inteiro qualquer e mostre na tela os N primeiros elementos de uma Sequência de Fibonacci.
- Ex.: 0 --> num --> num --> 2 --> 3 --> 5 --> 8'''
+ Ex.: 0 --> 1 --> 1 --> 2 --> 3 --> 5 --> 8'''
 
 #! Exercício pendente
 
