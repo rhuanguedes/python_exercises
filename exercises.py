@@ -214,12 +214,13 @@
 - Em que posição ela aparece a primeira vez.
 - Em que posição ela aparece a última vez.'''
 
-#! Exercício pendente
+# frase = input("Digite uma frase: ").upper().strip()
+# print(f'Essa frase contém {frase.count("A")} letras "A".')
+# print(f'A letra "A" aparece pela primeira vez na {frase.find("A") +1}ª posição.')
+# print(f'E na última vez aparece na {frase.rfind("A") +1}ª posição.')
 
 # === EXERCÍCIO 027 ===
 '''Faça um programa que leia o nome completo de uma pessoa, mostrando em seguida o primeiro e o último nome separadamente.'''
-
-#! Exercício pendente
 
 # === EXERCÍCIO 028 === #? CONDIÇÕES SIMPLES E COMPOSTAS
 '''Escreva um programa que faça o computador “pensar” em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi
@@ -271,7 +272,12 @@
 # === EXERCÍCIO 032 ===
 '''Faça um programa que leia um ano qualquer e mostre se ele é BISSEXTO.'''
 
-#! Exercício pendente
+# ano = int(input("Digite um ano e descubra se ele é Bissexto: "))
+
+# if ano % 4 == 0 and not ano % 100 == 0 or ano % 4 == 0 and ano % 400 == 0:
+#     print("Este ano é Bissexto!")
+# else:
+#     print("Esse ano não é Bissexto.")
 
 # === EXERCÍCIO 033 ===
 '''Faça um programa que leia três números e mostre qual é o maior e qual é o menor.'''
@@ -313,7 +319,14 @@
 # === EXERCÍCIO 035 ===
 '''Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo.'''
 
-#! Exercício pendente
+# reta1 = float(input("Digite o comprimento da 1ª reta: "))
+# reta2 = float(input("Digite o comprimento da 2ª reta: "))
+# reta3 = float(input("Digite o comprimento da 3ª reta: "))
+
+# if reta1 + reta2 > reta3 and reta1 + reta3 > reta2 and reta2 + reta3 > reta1:
+#     print("Essas retas podem formar um triângulo!")
+# else:
+#     print("Essas retas não podem formar um triângulo.")
 
 # === EXERCÍCIO 036 === #? CONDIÇÕES ANINHADAS
 '''Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa, perguntando o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
@@ -342,22 +355,20 @@
 # print("=" * 30)
 # num = int(input("Digite um número: "))
 # print("=" * 30)
-# print("[num] Binário\n[2] Octal\n[3] Hexadecimal\n")
+# print("[1] Binário\n[2] Octal\n[3] Hexadecimal\n")
 # opcao = int(input("Selecione uma opção: "))
 
-# if opcao == num:
+# if opcao == 1:
 #     num = bin(num)
-#     print(f"Binário: {num}")
+#     print(f"Binário: {num[2:]}")
 # elif opcao == 2:
 #     num = oct(num)
-#     print(f"Octal: {num}")
+#     print(f"Octal: {num[2:]}")
 # elif opcao == 3:
 #     num = hex(num)
-#     print(f"Hexadecimal: {num}")
+#     print(f"Hexadecimal: {num[2:]}")
 # else:
 #     print("Selecione uma opção válida!")
-    
-#! Exercício incompleto
 
 # === EXERCÍCIO 038 ===
 '''Escreva um programa que leia dois números inteiros e compare-os, mostrando na tela uma mensagem:
@@ -382,7 +393,27 @@
 - Se já passou do tempo do alistamento.
 Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.'''
 
-#! Exercício pendente
+# from datetime import datetime
+
+# ano_atual = datetime.now().year
+# ano_nasc = int(input("Ano de nascimento: "))
+# idade = ano_atual - ano_nasc
+# print(f"Esse ano você completa {idade} anos.")
+
+# if idade < 18:
+#     saldo = (idade - 18) * -1
+#     if saldo == 1:
+#         print(f"Falta {saldo} ano para você se alistar.")
+#     else:
+#         print(f"Faltam {saldo} anos para você se alistar.")       
+# elif idade == 18:
+#     print("Você está no prazo de alistamento! Busque uma junta militar com urgência!")
+# else:
+#     saldo = idade - 18
+#     if saldo == 1:
+#         print(f"Você já passou do prazo de alistamento. Você deveria ter se alistado a {saldo} ano.")
+#     else:
+#         print(f"Você já passou do prazo de alistamento. Você deveria ter se alistado a {saldo} anos.")
 
 # === EXERCÍCIO 040 ===
 '''Crie um programa que leia duas notas de um aluno, calcule sua média e mostre uma mensagem no final, de acordo com a média atingida:
@@ -412,11 +443,26 @@ Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.''
 - Até 20 anos: SÊNIOR
 - Acima: MASTER'''
 
-#! Exercício pendente
+# from datetime import datetime
 
-import datetime
+# ano_atual = datetime.now().year
+# ano_nasc = int(input("Ano de nascimento: "))
+# idade = ano_atual - ano_nasc
 
-data_atual = datetime.datetime.now().date()
+# if idade > 0 and idade <= 120:
+#     print(f"Você tem {idade} anos") 
+#     if idade < 10:
+#         print("Você pertence a categoria MIRIM.")
+#     elif idade < 15:
+#         print("Você pertence a categoria INFANTIL.")
+#     elif idade < 20:
+#         print("Você pertence a categoria JÚNIOR.")
+#     elif idade == 20:
+#         print("Você pertence a categoria SÊNIOR.")
+#     else:
+#         print("Você pertence a categoria MASTER.")
+# else:
+#     print("Digite um ano de nascimento válido!")
 
 # === EXERCÍCIO 042 ===
 '''Refaça o EXERCÍCIO 035 dos triângulos, acrescentando o recurso de mostrar que tipo de triângulo será formado:
@@ -424,7 +470,20 @@ data_atual = datetime.datetime.now().date()
 - ISÓSCELES: dois lados iguais
 - ESCALENO: todos os lados diferentes'''
 
-#! Exercício pendente
+# reta1 = float(input("Digite o comprimento da 1ª reta: "))
+# reta2 = float(input("Digite o comprimento da 2ª reta: "))
+# reta3 = float(input("Digite o comprimento da 3ª reta: "))
+
+# if reta1 + reta2 > reta3 and reta1 + reta3 > reta2 and reta2 + reta3 > reta1:
+#     print("Essas retas podem formar um triângulo!")
+#     if reta1 == reta2 == reta3:
+#         print("Triângulo equilátero.")
+#     elif reta1 == reta2 != reta3 or reta1 == reta3 != reta2 or reta2 == reta3 != reta1:
+#         print("Triângulo isósceles.")
+#     else:
+#         print("Triângulo escaleno")
+# else:
+#     print("Essas retas não podem formar um triângulo.")
 
 # === EXERCÍCIO 043 ===
 '''Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e mostre seu status, de acordo com a tabela abaixo:
@@ -434,7 +493,24 @@ data_atual = datetime.datetime.now().date()
 - 30 até 40: Obesidade
 - Acima de 40: Obesidade Mórbida'''
 
-#! Exercício pendente
+# peso = float(input("Peso: "))
+# altura = float(input("Altura: "))
+# imc = peso / altura ** 2
+
+# print(f"IMC: {imc:.1f}")
+
+# if imc < 18.5:
+#     print("Abaixo do peso.")
+# elif imc < 25:
+#     print("Peso ideal.")
+# elif imc < 30:
+#     print("Sobrepeso.")
+# elif imc < 40:
+#     print("Obesidade.")
+# elif imc > 40:
+#     print("Obesidade mórbida.")
+# else:
+#     print("IMC inválido, analise os valores informados!")
 
 # === EXERCÍCIO 044 ===
 '''Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal e condição de pagamento:
@@ -443,12 +519,40 @@ data_atual = datetime.datetime.now().date()
 - em até 2x no cartão: preço normal
 - 3x ou mais no cartão: 20% de juros'''
 
-#! Exercício pendente
+# valor = float(input("Valor: "))
+# print("Formas de pagamento:\n[1] À vista dinheiro/cheque(10% de desconto)\n[2] À vista no cartão(5% de desconto)\n[3] Em até 2x no cartão(preço normal)\n[4] 3x ou mais no cartão: 20% de juros")
+# forma_pag = int(input("Forma de pagamento: "))
+
+# if forma_pag == 1:
+#     print(f"Valor final: R${valor - valor * 0.10:.2f}")
+# elif forma_pag == 2:
+#     print(f"Valor final: R${valor - valor * 0.05:.2f}")
+# elif forma_pag == 3:
+#     print(f"Valor final: R${valor:.2f}")
+# elif forma_pag == 4:
+#     print(f"Valor final: R${valor + valor * 0.20:.2f}")
+# else:
+#     print("Selecione uma opção válida!")
 
 # === EXERCÍCIO 045 ===
 '''Crie um programa que faça o computador jogar Jokenpô com você.'''
 
-#! Exercício pendente
+# from random import choice
+
+# opcoes = ["Pedra", "Papel", "Tesoura"]
+# user = input("Pedra, papel ou tesoura? ").capitalize().strip()
+# pc = choice(opcoes)
+
+# if user in opcoes:
+#     print(f"O computador escolheu {pc}.")
+#     if user == pc:
+#         print("Empate!")
+#     elif user == "Pedra" and pc == "Papel" or user == "Papel" and pc == "Tesoura" or user == "Tesoura" and pc == "Pedra":
+#         print("Computador venceu!")
+#     else:
+#         print("Você venceu!")
+# else:
+#     print('Digite apenas "Pedra", "Papel" ou "Tesoura"')
 
 # === EXERCÍCIO 046 === #? ESTRUTURA FOR
 '''Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0, com uma pausa de num segundo entre eles.'''
