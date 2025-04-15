@@ -23,6 +23,7 @@ Praticar lógica de programação e consolidar o aprendizado da linguagem Python
 
 - Repositório de uso pessoal, mas público para fins de portfólio.
 - Pode conter anotações técnicas, rascunhos de código e comentários explicativos.
+- Para executar qualquer código, basta acessar o arquivo "execises.py", copiar o trecho desejado e descomentar a seção correspondente.
 
 ---
 
