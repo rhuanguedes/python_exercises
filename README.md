@@ -19,13 +19,6 @@ Praticar lógica de programação e consolidar o aprendizado da linguagem Python
 
 ---
 
-## Progresso
-
-Atualmente seguindo a trilha de aprendizado do [Curso em Vídeo - Python (Gustavo Guanabara)](https://www.cursoemvideo.com/curso/python-3-mundo-1/)  
-Exercícios resolvidos até: Exercício 041
-
----
-
 ## Observações
 
 - Repositório de uso pessoal, mas público para fins de portfólio.
