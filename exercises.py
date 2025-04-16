@@ -615,18 +615,74 @@ Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.''
 # === EXERCÍCIO 054 ===
 '''Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.'''
 
-#! Exercício pendente
+# from datetime import datetime
+
+# ano_atual = datetime.now().year
+# maiores = 0
+# menores = 0
+
+# for i in range(1, 8):
+#     ano_nasc = int(input(f"Digite o ano de nascimento da {i}ª pessoa: "))
+#     idade = ano_atual - ano_nasc
+#     if idade < 18:
+#         menores = menores + 1
+#     else:
+#         maiores = maiores + 1
+# print(f"{menores} pessoas ainda não atingiram a maioridade e {maiores} pessoas já são maiores de idade.")
+
 
 # === EXERCÍCIO 055 ===
 '''Faça um programa que leia o peso de cinco pessoas. No final, mostre qual foi o maior e o menor peso lidos.'''
 
-#! Exercício pendente
+# maior = 0
+# menor = 0
+
+# for i in range(1, 6):
+#     peso = float(input(f"Digite o peso da {i}ª pessoa: "))
+#     if peso > maior:
+#         maior = peso
+#     if menor == 0 or peso < menor:
+#         menor = peso
+# print(f"O menor peso lido foi {menor} Kg e o maior foi {maior} Kg.")
+ 
 
 # === EXERCÍCIO 056 ===
 '''Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do programa, mostre: a média de idade do grupo,
  qual é o nome do homem mais velho e quantas mulheres têm menos de 20 anos.'''
 
-#! Exercício pendente
+# from datetime import datetime
+
+# ano_atual = datetime.now().year
+# soma_idade = 0
+
+# idade_homem_mais_velho = 0
+# nome_homem_mais_velho = ""
+# mulheres_menores_20_anos = 0
+
+# for i in range(1, 5):
+#     nome = input(f"Nome da {i}ª pessoa: ")
+
+#     ano_nasc = int(input(f"Ano de nascimento da {i}ª pessoa: "))
+#     idade = ano_atual - ano_nasc
+#     soma_idade += idade
+    
+#     sexo = input(f"Sexo da {i}ª pessoa [M/F]: ").upper().strip()
+#     if sexo not in ("M", "F"):
+#         print("Sexo inválido, use M ou F.")
+#         continue
+#     else:
+#         if sexo in "Ff" and idade < 20:
+#             mulheres_menores_20_anos += 1
+#         if sexo in "Mm" and idade > idade_homem_mais_velho:
+#             idade_homem_mais_velho = idade
+#             nome_homem_mais_velho = nome
+
+# idade_media = soma_idade / 4
+
+# if nome_homem_mais_velho == "":
+#     print(f"Idade média do grupo: {idade_media} anos.\nNome do homem mais velho: Não há homem cadastrado.\nQuantidade de mulheres menores de 20 anos: {mulheres_menores_20_anos}.")
+# else:
+#     print(f"Idade média do grupo: {idade_media} anos.\nNome do homem mais velho: {nome_homem_mais_velho}.\nQuantidade de mulheres menores de 20 anos: {mulheres_menores_20_anos}.")
 
 # === EXERCÍCIO 057 === #? ESTRUTURA WHILE
 '''Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a digitação novamente até ter um valor correto.'''
