@@ -687,19 +687,71 @@ Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.''
 # === EXERCÍCIO 057 === #? ESTRUTURA WHILE
 '''Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado, peça a digitação novamente até ter um valor correto.'''
 
-#! Exercício pendente
+# while(True):
+#     sexo = input("Digite o sexo [M/F]: ").upper().strip()
+#     if sexo in ("M", "F"):
+#         break
+#     else:
+#          print("Digite apenas M para masculino ou F para femenino.")
+# print("Sexo registrado com sucesso!")  
 
 # === EXERCÍCIO 058 ===
 '''Melhore o EXERCÍCIO 028 onde o computador vai “pensar” em um número entre 0 e 10. Só que agora o jogador vai tentar adivinhar até acertar,
  mostrando no final quantos palpites foram necessários para vencer.'''
 
-#! Exercício pendente
+# from random import randint
+
+# pc = randint(1, 10)
+# palpites = 1 
+# while(True):
+#     num = int(input("Descubra que número estou pensando: "))
+#     if num == pc:
+#         print(f"Eu pensei no número {pc}. Você acertou!")
+#         break
+#     else:
+#         print("Não foi esse. Tente outro!")
+#         palpites = palpites + 1
+       
+# if palpites == 1:
+#     print(f"Foi necessário {palpites} palpite.")
+# else:
+#     print(f"Foram necessários {palpites} palpites.")
 
 # === EXERCÍCIO 059 ===
 '''Crie um programa que leia dois valores e mostre um menu na tela: [1] somar, [2] multiplicar, [3] maior, [4] novos números, [5] sair do programa.
  Seu programa deverá realizar a operação solicitada em cada caso.'''
 
-#! Exercício pendente
+# num1 = float(input("Digite um valor: "))
+# num2 = float(input("Digite outro valor: "))
+
+# while(True):
+#     print("=" * 30)
+#     print("[1] Somar\n[2] Multiplicar\n[3] Maior\n[4] Novos números\n[5] Sair do programa.")
+#     print("=" * 30)
+#     opcao = int(input("Selecione uma opção: "))
+
+#     if opcao == 1:
+#         print(f"A soma dos valores é {num1 + num2}.")
+#     elif opcao == 2:
+#         print(f"O produto dos valores é {num1 * num2}.")
+#     elif opcao == 3:
+#         maior = num1
+#         if num1 > num2:
+#             maior = num1
+#         else:
+#             maior = num2
+#         print(f"O maior número {maior}.")
+#     elif opcao == 4:
+#         novo_num1 = float(input("Digite o primeiro valor: "))
+#         num1 = novo_num1
+#         novo_num2 = float(input("Digite o segundo valor: "))
+#         num2 = novo_num2
+#     elif opcao == 5:
+#         print("Encerramento programa...")
+#         break
+#     else:
+#         print("Digite uma opção válida.")
+
 
 # === EXERCÍCIO 060 ===
 '''Faça um programa que leia um número qualquer e mostre o seu fatorial. Ex.: 5! = 5 x 4 x 3 x 2 x 1 = 120''' 
